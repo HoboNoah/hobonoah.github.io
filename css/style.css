@@ -53,7 +53,11 @@ header li{
 @media(max-width:943px){
     .main-header{
         position:static;
-        margin-top:-10px;
+        margin-top:-15px;
+    }
+
+    .main-header li{
+        margin-top:15px;
     }
 
     .main-header li:nth-child(2), li:nth-child(3), li:nth-child(4){
@@ -85,9 +89,10 @@ header li{
     padding:100px 40px 40px 40px;
 }
 
+
 @media(max-width:943px){
     .yt-video{
-        padding:40px;
+        padding:20px;
     }
 }
 
@@ -162,7 +167,7 @@ iframe{
 
 .bio p{
     font-family:'Aldrich';
-    font-size:3vmin;
+    font-size:30px;
     text-align:center;
     line-height:1.4;
     color:white;
@@ -171,11 +176,23 @@ iframe{
     padding:20px;
 }
 
+@media(max-width:1280px){
+    .bio p{
+        font-size:25px;
+    }
+}
+
+@media(max-width:340px){
+    .bio p{
+        font-size:15px;
+    }
+}
+
 .portrait img{
     display:block;
     margin:0 auto;
-    min-width:260px;
-    max-width:80%;
+    min-width:200px;
+    max-width:70%;
     height:auto;
     border-radius:50%;
     padding-top:20px;
@@ -209,9 +226,27 @@ iframe{
     padding-bottom:5px;
 }
 
-@media(max-width:967px){
+@media(max-width:1110px){
     .three-thumbnails figcaption{
         font-size:25px;
+    }
+}
+
+@media(max-width:1000px){
+    .three-thumbnails figcaption{
+        font-size:20px;
+    }
+}
+
+@media(max-width:943px){
+    .three-thumbnails figcaption{
+        font-size:30px;
+    }
+}
+
+@media(max-width:410px){
+    .three-thumbnails figcaption{
+        font-size:20px;
     }
 }
 
@@ -253,7 +288,7 @@ iframe{
     color:#CDA5A5;
 }
 
-#animation::before{
+#animation::before, #modeling::before, #misc::before{
     content:"";
     display:inline-block;
     width:40px;
@@ -264,26 +299,32 @@ iframe{
     vertical-align: middle;
 }
 
-#modeling::before{
-    content:"";
-    display:inline-block;
-    width:40px;
-    height:40px;
-    margin-right:10px;
-    background:url('../img/arrow-right.svg') no-repeat;
-    background-size:contain;
-    vertical-align: middle;
+@media(max-width:1110px){
+    #animation::before, #modeling::before, #misc::before{
+        width:35px;
+        height:35px;
+    }
 }
 
-#misc::before{
-    content:"";
-    display:inline-block;
-    width:40px;
-    height:40px;
-    margin-right:10px;
-    background:url('../img/arrow-right.svg') no-repeat;
-    background-size:contain;
-    vertical-align: middle;
+@media(max-width:1000px){
+    #animation::before, #modeling::before, #misc::before{
+        width:30px;
+        height:30px;
+    }
+}
+
+@media(max-width:943px){
+    #animation::before, #modeling::before, #misc::before{
+        width:40px;
+        height:40px;
+    }
+}
+
+@media(max-width:410px){
+    #animation::before, #modeling::before, #misc::before{
+        width:30px;
+        height:30px;
+    }
 }
 
 .back-header{
@@ -300,8 +341,26 @@ iframe{
     display:flex;
     color:white;
     font-family:'Aldrich';
-    font-size:3vmin;
+    font-size:30px;
     list-style-type:none;
+}
+
+@media(max-width:380px){
+    .back-header ul{
+        font-size:25px;
+    }
+}
+
+@media(max-width:380px){
+    .back-header li{
+        margin-top:10px;
+    }
+}
+
+@media(max-width:330px){
+    .back-header ul{
+        font-size:20px;
+    }
 }
 
 #back-arrow::before{
@@ -315,6 +374,20 @@ iframe{
     vertical-align: middle;
 }
 
+@media(max-width:380px){
+    #back-arrow::before{
+        width:35px;
+        height:35px;
+    }
+}
+
+@media(max-width:330px){
+    #back-arrow::before{
+        width:30px;
+        height:30px;
+    }
+}
+
 .animation-gallery, .modeling-gallery, .misc-gallery{
     text-align:center;
     height:100%;
@@ -322,9 +395,27 @@ iframe{
 
 .animation-gallery h1, .modeling-gallery h1, .misc-gallery h1{
     font-family:'Aldrich';
-    font-size:4.5vmin;
+    font-size:45px;
     text-align:center;
     padding:20px 0 20px 0;
+}
+
+@media(max-width:520px){
+    .animation-gallery h1, .modeling-gallery h1, .misc-gallery h1{
+        font-size:35px;
+    }
+}
+
+@media(max-width:405px){
+    .animation-gallery h1, .modeling-gallery h1, .misc-gallery h1{
+        font-size:30px;
+    }
+}
+
+@media(max-width:340px){
+    .animation-gallery h1, .modeling-gallery h1, .misc-gallery h1{
+        font-size:25px;
+    }
 }
 
 .animation-gallery hr, .modeling-gallery hr, .misc-gallery hr{
@@ -372,7 +463,7 @@ iframe{
 
 .contact-info p{
     font-family:'Aldrich';
-    font-size:4vmin;
+    font-size:30px;
     text-align:center;
     line-height:1.4;
     color:white;
@@ -381,27 +472,14 @@ iframe{
     padding:20px;
 }
 
-.parent-2{
-    height:100vh;
-    background-color:pink;
-    border:1px solid red;
+@media(max-width:450px){
+    .contact-info p, .contact-info a{
+        font-size:20px;
+    }
 }
 
-
-.child-2{
-    width:300px;
-    height:300px;
-    background-color:gray;
-}
-
-.child-3{
-    width:300px;
-    height:300px;
-    background-color:gray;
-}
-
-.child-4{
-    width:300px;
-    height:300px;
-    background-color:gray;
+@media(max-width:310px){
+    .contact-info a{
+        font-size:15px;
+    }
 }
