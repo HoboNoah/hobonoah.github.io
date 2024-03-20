@@ -182,9 +182,9 @@ iframe{
     }
 }
 
-@media(max-width:340px){
+@media(max-width:500px){
     .bio p{
-        font-size:15px;
+        font-size:20px;
     }
 }
 
