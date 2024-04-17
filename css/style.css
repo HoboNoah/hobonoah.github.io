@@ -62,6 +62,12 @@ body{
     }
 }
 
+@media(max-width:380px){
+    .main-header li{
+        margin-top:15px;
+    }
+}
+
 .demo, .portfolio{
     height:100vh;
     background-color:#595959;
@@ -153,7 +159,7 @@ iframe{
 }
 
 @media(max-width:380px){
-    .main-header li, .about-header li, .portfolio-header li, .contact-header li, .back-header li{
+    .about-header li, .portfolio-header li, .contact-header li, .back-header li{
         margin-top:13px;
     }
 }
