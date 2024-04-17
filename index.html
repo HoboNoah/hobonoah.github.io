@@ -8,22 +8,23 @@
     <title>Alex Lewis Portfolio</title>
 </head>
 <body>
+    <div class="main-header">
+        <header>
+            <ul>
+                <li><a href="#top">Demo Reel</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </header>
+    </div>
+
         <div class="demo">
-            <div class="main-header">
-                <header>
-                    <ul>
-                        <li><a href="#top">Demo Reel</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </header>
-            </div>
             <div class="yt-video">
                 <div class="yt-link">
                     <!--If you want to replace this video, remove width and height-->
-                    <iframe src="https://www.youtube.com/embed/E_tYBdAKhXI?si=kGm-tuxCXOQ2kECm" title="YouTube video player" frameborder="0" allow="accelerometer; 
-                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/E_tYBdAKhXI?si=brRggsoiytP5IwIU" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -47,11 +48,11 @@
                 </div>
                 <div class="bio">
                     <p>
-                        My name is Alex Lewis, <br> I’m a 3D Animator and a 3D generalist. <br> I’ve worked on a variety of projects including <br> video games and animated shorts. <br> I specialize 
-                        in character animation and rigging <br> and I have a very well-rounded 3D skillset. 
+                        My name is Alex Lewis, I’m a 3D Animator and a 3D generalist. I’ve worked on a variety of projects including video games and animated shorts. I specialize in character 
+                        animation and rigging and I have a very well-rounded 3D skillset. 
                         <br>
                         <br>
-                        I strive to be as clear, reliable, adaptable and <br> punctual as possible.
+                        I strive to be as clear, reliable, adaptable and punctual as possible.
                     </p>
                 </div>
             </div>
@@ -59,7 +60,7 @@
 
         <div class="portfolio">
             <div class="portfolio-header">
-                <header id="portfolio" class="header-length">
+                <header id="portfolio">
                     <ul>
                         <li>Portfolio</li>
                     </ul>
@@ -88,9 +89,8 @@
         </div>
 
         <div class="contact">
-
             <div class="contact-header">
-                <header id="contact" class="header-length">
+                <header id="contact">
                     <ul>
                         <li>Contact Me!</li>
                     </ul>
@@ -106,15 +106,18 @@
                     <br>
                     Thank you!
                 </p>
+                <div class="linkdin-mobile">
+                    <div class="linkdin-mobile-icon">
+                        <a href="https://linktr.ee/HoboNoah" target="_blank"><img src="img/linkdin.svg" width="50" height="50"></a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="linkdin">
+            <div class="linkdin-icon">
+                <a href="https://linktr.ee/HoboNoah" target="_blank"><img src="img/linkdin.svg" width="50" height="50"></a>
             </div>
         </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script>
-            jQuery(document).ready(function(){
-                jQuery('.yt-video').fitVids();
-            });
-    </script>
-    <script src="js/js.js"></script>
+    <script src="js/clicked-color.js"></script>
 </body>
 </html>
