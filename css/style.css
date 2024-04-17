@@ -94,8 +94,12 @@ body{
 
 
 @media(max-width:943px){
+    .yt-link{
+        width:100%;
+    }
+
     .yt-video{
-        padding:20px;
+        padding:10px;
     }
 }
 
