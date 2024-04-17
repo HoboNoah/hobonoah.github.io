@@ -153,7 +153,7 @@ iframe{
 }
 
 @media(max-width:380px){
-    .main-header, .about-header li, .portfolio-header li, .contact-header li, .back-header li{
+    .main-header li, .about-header li, .portfolio-header li, .contact-header li, .back-header li{
         margin-top:13px;
     }
 }
