@@ -71,7 +71,7 @@ body{
 .demo, .portfolio{
     height:100vh;
     background-color:#595959;
-    margin-top:50px;
+    margin-top:70px;
 }
 
 @media(max-width:943px){
@@ -92,24 +92,92 @@ body{
     width:100%;
 }
 
-
 @media(max-width:943px){
-    .yt-link{
-        width:100%;
-    }
-
     .yt-video{
         padding:10px;
     }
 }
 
 .yt-link{
-    width:80%;
+    width:75%;
+}
+
+@media(max-width:943px){
+    .yt-link{
+        width:100%;
+    }
+}
+
+iframe#demo{
+    width:100%;
+    height: calc(.5625 * 50vw);
+}
+
+@media(max-width:943px){
+    iframe#demo{
+        padding:20px;
+        height: calc(.5625 * 90vw);
+    }
+}
+
+.demo h1{
+    color:black;
+    font-family:'Aldrich';
+    font-size:1.5em;
+    padding:20px;
+}
+
+@media(max-width:943px){
+    .demo h1{
+        text-align:center;
+    }
+}
+
+#demo-header::after{
+    content:"";
+    display:inline-block;
+    width:35px;
+    height:35px;
+    background:url('../img/arrow-down.svg') no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+}
+
+hr{
+    border:0;
+    border-top:2px solid #2E2E2E;
+}
+
+.yt-thumbnails{
+    height:100%;
+    width:100%;
+    margin-top:20px;
+}
+
+.yt-thumbnails-links{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    width:100%;
+}
+
+@media(max-width:943px){
+    .yt-thumbnails-links{
+        flex-direction:column;
+    }
 }
 
 iframe{
     width:100%;
-    height: calc(.5625 * 68vw);
+    height: calc(.5625 * 15vw);
+}
+
+@media(max-width:943px){
+    iframe{
+        height: calc(.5625 * 50vw);
+    }
 }
 
 .about, .contact{
@@ -118,18 +186,9 @@ iframe{
 }
 
 @media(max-width:943px){
-    .demo{
+    .demo, .about, .contact{
         height:auto;
     }
-
-    .about{
-        height:auto;
-    }
-
-    .contact{
-        height:auto;
-    }
-
 }
 
 .about-header, .portfolio-header, .contact-header{
@@ -577,7 +636,7 @@ iframe{
     }
 }
 
-.linkdin-icon{
+.linktree-icon{
     position:fixed;
     bottom:0;
     right:0;
@@ -585,17 +644,17 @@ iframe{
 }
 
 @media(max-width:500px){
-    .linkdin-icon{
+    .linktree-icon{
         display:none;
     }
 }
 
-.linkdin-mobile{
+.linktree-mobile{
     display:none;
 }
 
 @media(max-width:500px){
-    .linkdin-mobile{
+    .linktree-mobile{
         display:block;
         padding-bottom:20px;
     }

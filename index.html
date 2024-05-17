@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Alex Lewis Portfolio</title>
@@ -19,105 +26,138 @@
         </header>
     </div>
 
-        <div class="demo">
-            <div class="yt-video">
-                <div class="yt-link">
-                    <!--If you want to replace this video, remove width and height-->
-                    <iframe src="https://www.youtube.com/embed/E_tYBdAKhXI?si=brRggsoiytP5IwIU" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
+    <!--If you want to replace these videos, remove width and height-->
+    <div class="demo">
+        <div class="yt-video">
+            <div class="yt-link">
+                <iframe id="demo" src="https://www.youtube.com/embed/E_tYBdAKhXI?si=brRggsoiytP5IwIU" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <div class="about">
-            <div class="about-header">
-                <header id="about" class="header-length">
-                    <ul>
-                        <li>About</li>
-                        <li>Alex Lewis</li>
-                        <li>-</li>
-                        <li>3D Animator</li>
-                        <li>-</li>
-                        <li>3D Generalist</li>
-                    </ul>
-                </header>
-            </div>
-            <div class="about-info">
-                <div class="portrait">
-                    <img src="img/portrait.png" width="700" height="700">
-                </div>
-                <div class="bio">
-                    <p>
-                        My name is Alex Lewis, I’m a 3D Animator and a 3D generalist. I’ve worked on a variety of projects including video games and animated shorts. I specialize in character 
-                        animation and rigging and I have a very well-rounded 3D skillset. 
-                        <br>
-                        <br>
-                        I strive to be as clear, reliable, adaptable and punctual as possible.
-                    </p>
-                </div>
-            </div>
-        </div>
+                <h1 id="demo-header">Recent Work</h1>
+                <hr>
 
-        <div class="portfolio">
-            <div class="portfolio-header">
-                <header id="portfolio">
-                    <ul>
-                        <li>Portfolio</li>
-                    </ul>
-                </header>
-            </div>
-            <div class="three-thumbnails">
-                <div class="animation">
-                    <figure>
-                        <a href="animation.html"><img src="img/thumbnails/animation.png"></a>
-                    <figcaption><a href="animation.html" id="animation">3D Animation</figcaption></a>
-                </figure>
-                </div>
-                <div class="modeling">
-                    <figure>
-                        <a href="modeling.html"><img src="img/thumbnails/models.png"></a>
-                    <figcaption><a href="modeling.html" id="modeling">3D Modeling</a></figcaption>
-                </figure>
-                </div>
-                <div class="misc">
-                    <figure>
-                        <a href="misc.html"><img src="img/thumbnails/misc.png"></a>
-                    <figcaption><a href="misc.html" id="misc">Miscellaneous</a></figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact">
-            <div class="contact-header">
-                <header id="contact">
-                    <ul>
-                        <li>Contact Me!</li>
-                    </ul>
-                </header>
-            </div>
-            <div class="contact-info">
-                <p>
-                    If you think I would be a good fit on your team or project, please drop me an email at:
-                    <br>
-                    <br>
-                    <a href=mailto:"alex.max.lewis@gmail.com">alex.max.lewis@gmail.com</a>
-                    <br>
-                    <br>
-                    Thank you!
-                </p>
-                <div class="linkdin-mobile">
-                    <div class="linkdin-mobile-icon">
-                        <a href="https://linktr.ee/HoboNoah" target="_blank"><img src="img/linkdin.svg" width="50" height="50"></a>
+                <div class="yt-thumbnails">
+                    <div class="yt-thumbnails-links">
+                        <div class="link-1">
+                            <iframe src="https://www.youtube.com/embed/3C9-JC_u8wc?si=I-Q_nE_jjT6deCKV" title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen></iframe>
+                        </div>
+                        <div class="link-2">
+                            <iframe src="https://www.youtube.com/embed/GFgd4fRVZlQ?si=YdMYLaWs57x14mzD" title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen></iframe>
+                        </div>
+                        <div class="link-3">
+                            <iframe src="https://www.youtube.com/embed/JzSJEU-txjU?si=fxRIXjCdhidq4w-D" title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen></iframe>
+                        </div>
+                        <div class="link-4">
+                            <iframe src="https://www.youtube.com/embed/GUp-HcOA5ss?si=2AUut0MQF3rbpo8F" title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-        <div class="linkdin">
-            <div class="linkdin-icon">
-                <a href="https://linktr.ee/HoboNoah" target="_blank"><img src="img/linkdin.svg" width="50" height="50"></a>
+    <div class="about">
+        <div class="about-header">
+            <header id="about" class="header-length">
+                <ul>
+                    <li>About</li>
+                    <li>Alex Lewis</li>
+                    <li>-</li>
+                    <li>3D Animator</li>
+                    <li>-</li>
+                    <li>3D Generalist</li>
+                </ul>
+            </header>
+        </div>
+
+        <div class="about-info">
+            <div class="portrait">
+                <img src="img/portrait.png" width="700" height="700">
+            </div>
+            <div class="bio">
+                <p>
+                    My name is Alex Lewis, I’m a 3D Animator and a 3D generalist. I’ve worked on a variety of projects including video games and animated shorts. I specialize in character 
+                    animation and rigging and I have a very well-rounded 3D skillset. 
+                    <br>
+                    <br>
+                    I strive to be as clear, reliable, adaptable and punctual as possible.
+                </p>
             </div>
         </div>
+    </div>
+
+    <div class="portfolio">
+        <div class="portfolio-header">
+            <header id="portfolio">
+                <ul>
+                    <li>Portfolio</li>
+                </ul>
+            </header>
+        </div>
+
+        <div class="three-thumbnails">
+            <div class="animation">
+                <figure>
+                    <a href="animation.html"><img src="img/thumbnails/animation.png"></a>
+                <figcaption><a href="animation.html" id="animation">3D Animation</figcaption></a>
+            </figure>
+            </div>
+            <div class="modeling">
+                <figure>
+                    <a href="modeling.html"><img src="img/thumbnails/models.png"></a>
+                <figcaption><a href="modeling.html" id="modeling">3D Modeling</a></figcaption>
+            </figure>
+            </div>
+            <div class="misc">
+                <figure>
+                    <a href="misc.html"><img src="img/thumbnails/misc.png"></a>
+                <figcaption><a href="misc.html" id="misc">Miscellaneous</a></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-header">
+            <header id="contact">
+                <ul>
+                    <li>Contact Me!</li>
+                </ul>
+            </header>
+        </div>
+        <div class="contact-info">
+            <p>
+                If you think I would be a good fit on your team or project, please drop me an email at:
+                <br>
+                <br>
+                <a href=mailto:"alex.max.lewis@gmail.com">alex.max.lewis@gmail.com</a>
+                <br>
+                <br>
+                Thank you!
+            </p>
+        <div class="linktree-mobile">
+            <div class="linktree-mobile-icon">
+                <a href="https://linktr.ee/HoboNoah" target="_blank"><img src="img/linktree.png" width="50" height="50"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="linktree">
+        <div class="linktree-icon">
+            <a href="https://linktr.ee/HoboNoah" target="_blank"><img src="img/linktree.png" width="50" height="50"></a>
+        </div>
+    </div>
+
     <script src="js/clicked-color.js"></script>
+
 </body>
 </html>
