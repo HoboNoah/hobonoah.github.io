@@ -180,6 +180,13 @@ iframe{
     }
 }
 
+
+@media(max-width:500px){
+    iframe{
+        height: calc(.5625 * 80vw);
+    }
+}
+
 .about, .contact{
     height:100vh;
     background-color:#2E2E2E;
